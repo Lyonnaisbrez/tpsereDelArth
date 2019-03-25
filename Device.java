@@ -8,7 +8,7 @@ public class Device implements Runnable {
 	int waitTime = 4; // en sec
 
 	public static void main(String args[]) {
-		new Thread(new Download("http://10.101.101.3", 5)).start();
+		new Thread(new Download("http://10.101.101.2", 5)).start();
 		//new Thread(new Download("https://api.ipify.org/?format=json", 5)).start();
 		new Thread(new Device()).start();
 	}
